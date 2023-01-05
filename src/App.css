@@ -3,39 +3,55 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background: rgb(234, 217, 217);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+html, body {
+  background: black;
+  color: #00b800;
+  margin:0;
+  padding: 0;
+  padding-top: 10px;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button {
+  font-family: 'Press Start 2P', cursive;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background: #a80020;
+  background: #00b800;
+  padding: 10px 20px;
+  text-transform: uppercase;
 }
 
-.card {
-  padding: 2em;
+button:disabled {
+  cursor: not-allowed;
 }
 
-.read-the-docs {
-  color: #888;
+h1 {
+  font-size: 20px;
+  text-align:center;
 }
+
+textarea {
+  font-family: 'Press Start 2P', cursive;
+  border: 3px solid black;
+  width: 90%;
+  margin: 0 auto;
+  outline: none;
+  height: 200px;
+  background: #00b800;
+  padding: 10px;
+}
+
+textarea:disabled {
+  background-color: #a5a2a2;
+}
+
