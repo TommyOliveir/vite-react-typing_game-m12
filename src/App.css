@@ -3,16 +3,18 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background: rgb(234, 217, 217);
+  background: #d9eef3;
 }
 
 html, body {
-  background: black;
-  color: #00b800;
+  /* background: 
+  #1794ad; */
+  color: 
+  #1794ad;
   margin:0;
   padding: 0;
   padding-top: 10px;
-  font-family: 'Press Start 2P', cursive;
+ 
   text-align: center;
 }
 
@@ -25,14 +27,21 @@ button {
   display: block;
   margin: 0 auto;
   border: none;
-  background: #a80020;
-  background: #00b800;
+  background: 
+  #1794ad;
+  color: #ffffff;
   padding: 10px 20px;
   text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all .2s ease;
 }
 
 button:disabled {
   cursor: not-allowed;
+}
+button:hover {
+  transform: scale(1.2);
 }
 
 h1 {
@@ -42,16 +51,27 @@ h1 {
 
 textarea {
   font-family: 'Press Start 2P', cursive;
-  border: 3px solid black;
+  border: 1px solid #1794ad;
   width: 90%;
   margin: 0 auto;
   outline: none;
   height: 200px;
-  background: #00b800;
+  background: #ffffff;
   padding: 10px;
+  resize: none;
+  border-radius: 5px;
 }
 
 textarea:disabled {
-  background-color: #a5a2a2;
+  background-color: #ecf7f9;
 }
 
+span {
+  font-size: 1.5em;
+  color: green;
+}
+
+.time-remaining {
+  letter-spacing: .2em;
+  font-weight: 300;
+}

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import './App.css'
 
 function App() {
-  const STARTING_TIME = 8
+  const STARTING_TIME = 10
   //
   const [text, setText] = useState("")
   const [timeRemaining, setTimeRemaining] = useState(STARTING_TIME)
@@ -54,14 +54,14 @@ function App() {
         disabled={!isTimeRunning}
         ref={textBoxRef}
       />
-      <h4>Time remaining:  {timeRemaining} </h4>
+      <h4 className="time-remaining">Time remaining: <span> {timeRemaining} sec</span></h4>
       <button
         onClick={startGame}
         disabled={isTimeRunning}
       >
         Start
       </button>
-      <h1>Word count: {wordCount}</h1>
+      <h1>Word count: <span>{wordCount}</span></h1>
 
     </div>
   )
