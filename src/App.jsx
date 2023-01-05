@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import './App.css'
 
 function App() {
-  const STARTING_TIME = 5
+  const STARTING_TIME = 8
   //
   const [text, setText] = useState("")
   const [timeRemaining, setTimeRemaining] = useState(STARTING_TIME)
