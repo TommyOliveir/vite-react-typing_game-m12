@@ -47,7 +47,7 @@ function App() {
     <div>
 
       <h1>Typing game</h1>
-      <h1>How fast do you type?</h1>
+      <h2>How fast do you type?</h2>
       <textarea
         onChange={handleChange}
         value={text}
